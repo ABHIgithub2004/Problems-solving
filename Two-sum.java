@@ -1,18 +1,15 @@
-import java.util.Scanner;  // Importing Scanner class for taking user input
-import java.util.Arrays;   // Importing Arrays class for printing array
+import java.util.Scanner;  // Import Scanner class for taking user input
+import java.util.Arrays;   // Import Arrays class for printing array
 
 class Main {
     // Main method to test the twoSum 
     public static void main(String[] args) {
         // Create a Scanner object for getting user input
         Scanner in = new Scanner(System.in);
-        
         // Number of elements in the array
         int n = in.nextInt();
-        
         // Create an array to store user inputs
         int[] nums = new int[n];
-        
         // Input the elements of the array
         for (int i = 0; i < n; i++) {
             nums[i] = in.nextInt();
@@ -20,7 +17,6 @@ class Main {
         
         // Input the target value
         int target = in.nextInt();
-        
         // Call the twoSum method 
         int[] result = twoSum(nums, target);
         
@@ -36,7 +32,6 @@ class Main {
 
         // Variable to store the sum of two elements
         int sum = 0;
-        
         // Outer loop to iterate  each element in the array
         for (int i = 0; i < nums.length - 1; i++) {
             // Inner loop to find the second number that sums to the target
