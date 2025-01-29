@@ -14,7 +14,7 @@ public class AdditionSubtraction{
         //Subtracting two numbers
         int sub = n1 - n2;
 
-        // if any negative value in sum of sub , convert them to positive using Absolute method
+        // if any negative value in sum or sub , convert them to positive using Absolute method
         if(sum < 0 || sub < 0){
            sum =  Math.abs(sum);
            sub =  Math.abs(sub);
